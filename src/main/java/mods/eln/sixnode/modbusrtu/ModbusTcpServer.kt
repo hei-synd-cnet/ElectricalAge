@@ -230,7 +230,7 @@ class ModbusTcpServer(port: Int = 1502) {
 
             // check remaining amount of data and writing coils
             if (inputBuffer.remaining().toByte() >= byteCount) {
-                // Wrinting registers...
+                // Writing registers...
                 try {
                     var addr  = address
                     for (i in 1..quantity) {
@@ -265,7 +265,7 @@ class ModbusTcpServer(port: Int = 1502) {
 
             // check remaining amount of data and writing coils
             if (inputBuffer.remaining().toByte() >= byteCount) {
-                // Wrinting registers...
+                // Writing registers...
                 try {
                     var addr  = address
                     for (i in 1..quantity) {
